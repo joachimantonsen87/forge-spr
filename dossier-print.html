@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORGE × Pádel Sant Pere de Ribes · Dossier A4</title>
+<meta name="description" content="Versión imprimible en A4 del dossier de concepto FORGE para el vertical deportivo del club de pádel indoor de Sant Pere de Ribes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@page{size:A4;margin:14mm 15mm 16mm}
+:root{
+  --ink:#15181d;--ink-2:#3c444f;--muted:#5d6672;--dim:#8a929c;
+  --line:#dde1e6;--line-2:#eceef1;--soft:#f7f8fa;
+  --accent:#e05a12;--accent-soft:#fdf1ea;
+}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#fff;color:var(--ink-2);font-family:Inter,system-ui,Arial,sans-serif;font-size:9.4pt;line-height:1.5}
+h1,h2,h3,h4,.osw{font-family:Oswald,Arial Narrow,sans-serif;font-weight:600;margin:0;line-height:1.1;color:var(--ink)}
+p{margin:0 0 .72em}
+p:last-child{margin-bottom:0}
+strong{color:var(--ink);font-weight:600}
+a{color:var(--accent);text-decoration:none}
+.doc{max-width:180mm;margin:0 auto}
+
+/* ---- page flow ---- */
+.page{break-before:page;padding-top:2mm}
+.cover{break-after:page}
+.tbl-wrap,.card,.callout,.st,.req,.zone,.need,.peak,.plan-slot,.big-figure,.doc-foot,.blk,.sc,.stat,.dstep,.hero-stat{break-inside:avoid}
+h3.sub,.sec-head,.part{break-after:avoid}
+p,li{orphans:3;widows:3}
+thead{display:table-header-group}
+tr{break-inside:avoid}
+
+/* ---- cover ---- */
+.cover{padding-top:26mm}
+.eyebrow{display:inline-block;font-family:Oswald,sans-serif;font-size:7.2pt;font-weight:500;letter-spacing:1.9px;text-transform:uppercase;color:var(--accent);border:.6pt solid #f0b48f;border-radius:20pt;padding:2.6pt 9pt;margin-bottom:9mm}
+.cover h1{font-size:40pt;font-weight:700;line-height:.94;letter-spacing:-.8px;text-transform:uppercase;margin-bottom:4mm}
+.cover h1 .x{color:var(--accent);font-weight:400}
+.cover h1 .l2{display:block;font-size:.42em;font-weight:500;color:var(--muted);letter-spacing:.5px;margin-top:2.5mm}
+.cover .sub{font-family:Oswald,sans-serif;font-weight:400;font-size:11.5pt;letter-spacing:1.9px;text-transform:uppercase;color:var(--ink);margin:0 0 5mm}
+.cover .cred{display:inline-block;font-family:Oswald,sans-serif;font-weight:500;font-size:9pt;letter-spacing:1.4px;text-transform:uppercase;color:var(--accent);border-left:1.6pt solid var(--accent);padding:.6mm 0 .6mm 3.5mm;margin:0 0 7mm}
+.cover .intro{font-size:10.5pt;color:var(--muted);max-width:150mm}
+.cover .intro strong{color:var(--ink)}
+.cover-meta{display:grid;grid-template-columns:1fr 1fr;gap:5mm 14mm;margin:10mm 0 8mm;padding-top:5mm;border-top:.8pt solid var(--line)}
+.cover-meta dt{font-family:Oswald,sans-serif;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:1.5mm}
+.cover-meta dd{margin:0;font-size:9.4pt;color:var(--ink)}
+.toc{margin-top:8mm;padding-top:5mm;border-top:.8pt solid var(--line);columns:2;column-gap:14mm;font-size:8.6pt;color:var(--muted)}
+.toc div{padding:1.1mm 0;break-inside:avoid}
+.toc b{font-family:Oswald,sans-serif;font-weight:600;color:var(--accent);font-size:8pt;letter-spacing:1px;margin-right:3mm}
+.toc .tp{font-family:Oswald,sans-serif;font-size:7.4pt;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink);padding-top:3mm}
+
+/* ---- part dividers ---- */
+.part{padding:0 0 6mm;margin-bottom:4mm;border-bottom:1.2pt solid var(--ink)}
+.part .p-k{font-family:Oswald,sans-serif;font-size:7.6pt;font-weight:600;letter-spacing:2.4px;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:2mm}
+.part h2{font-size:24pt;text-transform:uppercase;letter-spacing:.3px}
+.part p{margin-top:3mm;font-size:9.4pt;color:var(--muted);max-width:155mm}
+.part.two{border-bottom:2.4pt solid var(--accent);background:var(--accent-soft);padding:6mm 6mm 5mm;margin:0 -6mm 5mm}
+
+/* ---- section headings ---- */
+.sec-head{display:flex;align-items:baseline;gap:5mm;border-bottom:1.2pt solid var(--ink);padding-bottom:2mm;margin-bottom:3.5mm}
+.sec-num{font-family:Oswald,sans-serif;font-weight:600;font-size:9pt;letter-spacing:1.6px;color:var(--accent)}
+.sec-head h2{font-size:18pt;text-transform:uppercase;letter-spacing:.3px}
+.sec-lead{font-size:10pt;color:var(--muted);max-width:158mm;margin:0 0 5mm}
+h3.sub{font-size:10.5pt;text-transform:uppercase;letter-spacing:1.3px;margin:6mm 0 2.5mm;padding-bottom:1.5mm;border-bottom:.6pt solid var(--line)}
+
+/* ---- callouts ---- */
+.callout{background:var(--soft);border:.6pt solid var(--line);border-left:2.2pt solid var(--accent);padding:4mm 5mm;margin:4mm 0;font-size:9.2pt}
+.callout .c-title{font-family:Oswald,sans-serif;font-size:7.6pt;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);margin-bottom:1.8mm}
+.callout.quiet{border-left-color:var(--dim);background:#fafbfc}
+.callout.quiet .c-title{color:var(--muted)}
+.callout.hard{background:var(--accent-soft);border-color:#f3ceb8}
+.callout.hard .big{font-family:Oswald,sans-serif;font-size:13pt;color:var(--ink);line-height:1.2;margin-bottom:2.2mm;font-weight:600}
+.conf{display:inline-block;font-family:Oswald,sans-serif;font-size:7pt;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted);border:.6pt solid var(--line);padding:1.4mm 3mm;margin-top:2.5mm}
+.conf b{color:var(--accent)}
+.note{font-size:8.4pt;color:var(--dim);margin-top:2mm}
+
+/* ---- tables ---- */
+.tbl-wrap{margin:4mm 0;border:.6pt solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:8.7pt}
+caption{text-align:left;font-family:Oswald,sans-serif;font-size:7.4pt;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);padding:2.8mm 4mm 0}
+th{text-align:left;font-family:Oswald,sans-serif;font-weight:500;font-size:7.4pt;letter-spacing:1.3px;text-transform:uppercase;color:var(--muted);padding:2.6mm 4mm;border-bottom:.8pt solid var(--ink);background:var(--soft)}
+td{padding:2.4mm 4mm;border-bottom:.5pt solid var(--line-2);color:var(--ink-2);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td:first-child{color:var(--ink);font-weight:500}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th.num{text-align:right}
+tr.total td{background:var(--soft);color:var(--ink);font-weight:600;border-top:.8pt solid var(--line)}
+tr.hl td{background:var(--accent-soft);color:var(--ink)}
+.t-surface th:first-child,.t-surface td:first-child{width:42%}
+.t-surface th:nth-child(2),.t-surface td:nth-child(2){width:16mm}
+.t-cuotas th:first-child,.t-cuotas td:first-child{width:62%}
+.t-esc th:first-child,.t-esc td:first-child{width:34%}
+.t-esc th:not(:first-child),.t-esc td:not(:first-child){width:22%}
+.t-lesion th:first-child,.t-lesion td:first-child{width:16%}
+.t-lesion td:first-child{color:var(--accent)}
+.t-prod th:first-child,.t-prod td:first-child{width:27%}
+
+/* ---- deduction steps ---- */
+.deduce{margin:4mm 0 0;border-top:.8pt solid var(--line)}
+.dstep{display:grid;grid-template-columns:10mm 1fr;gap:5mm;padding:4mm 0;border-bottom:.6pt solid var(--line)}
+.dstep .ds{font-family:Oswald,sans-serif;font-weight:500;font-size:8pt;letter-spacing:1.5px;color:var(--dim);padding-top:1mm}
+.dstep h4{font-family:Oswald,sans-serif;font-weight:600;font-size:11pt;text-transform:uppercase;letter-spacing:.6px;color:var(--ink);margin:0 0 1.8mm}
+.dstep p{font-size:9pt;color:var(--muted)}
+.dstep .cap{display:block;font-family:Oswald,sans-serif;font-weight:600;font-size:30pt;color:var(--accent);line-height:1;margin:0 0 2.5mm}
+.dstep .cap small{display:block;font-family:Inter,sans-serif;font-weight:400;font-size:8.2pt;color:var(--dim);margin-top:1.6mm}
+
+/* ---- program blocks ---- */
+.blocks{margin:4mm 0 0;border-top:.8pt solid var(--line)}
+.blk{display:grid;grid-template-columns:11mm 1fr;gap:5mm;padding:4mm 0;border-bottom:.6pt solid var(--line)}
+.blk .bn{font-family:Oswald,sans-serif;font-weight:600;font-size:15pt;color:var(--accent);line-height:1;opacity:.6}
+.blk h4{font-family:Oswald,sans-serif;font-weight:600;font-size:11.5pt;text-transform:uppercase;letter-spacing:.5px;color:var(--ink);margin:0 0 1.8mm}
+.blk p{font-size:9pt;color:var(--muted)}
+.blk .blk-link{margin-top:2.2mm;padding-left:3.4mm;border-left:1.4pt solid #eaa678;font-size:8.4pt;color:var(--dim)}
+
+/* ---- hero stat ---- */
+.hero-stat{display:flex;flex-wrap:wrap;align-items:center;gap:2mm 8mm;margin:4mm 0 3mm;padding:6mm 7mm;border:.8pt solid #eaa678;background:var(--accent-soft)}
+.hero-stat > b{font-family:Oswald,sans-serif;font-weight:700;font-size:54pt;color:var(--accent);line-height:.85;letter-spacing:-1px}
+.hero-stat > div{padding-top:1mm}
+.hero-stat strong{display:block;font-family:Oswald,sans-serif;font-weight:600;font-size:18pt;color:var(--ink);text-transform:uppercase;letter-spacing:1.1px;line-height:1.05}
+.hero-stat span{display:block;font-size:9pt;color:var(--muted);margin-top:1.6mm}
+.hero-stat em{flex:1 1 100%;font-style:normal;font-size:9pt;color:var(--muted);margin-top:3mm;padding-top:3mm;border-top:.6pt solid #eaa678}
+
+/* ---- stats ---- */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:2mm;margin:4mm 0}
+.stat{border:.6pt solid var(--line);background:var(--soft);padding:3.4mm 3.6mm}
+.stat b{display:block;font-family:Oswald,sans-serif;font-weight:600;font-size:19pt;color:var(--accent);line-height:1;margin-bottom:1.8mm}
+.stat span{display:block;font-size:8.1pt;color:var(--muted);line-height:1.4}
+.stat.wide{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:baseline;gap:1.5mm 5mm}
+.stat.wide b{font-size:14pt;margin-bottom:0}
+.stat.wide span{font-size:8.8pt}
+
+/* ---- surface scale ---- */
+.scale{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;margin:4mm 0}
+.sc{border:.6pt solid var(--line);border-top:1.6pt solid var(--line);background:#fff;padding:3.2mm 3.4mm}
+.sc b{display:block;font-family:Oswald,sans-serif;font-weight:600;font-size:15pt;color:var(--ink);line-height:1;margin-bottom:1.6mm}
+.sc span{display:block;font-family:Oswald,sans-serif;font-size:7pt;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:2mm;color:var(--muted)}
+.sc p{font-size:8pt;color:var(--muted);margin:0}
+.sc.best{border-top-color:var(--accent);background:var(--accent-soft)}
+.sc.best b,.sc.best span{color:var(--accent)}
+.sc.ok{border-top-color:#eaa678}
+.sc.no b,.sc.no span{color:var(--dim)}
+
+/* ---- grids ---- */
+.grid{display:grid;gap:3.5mm;margin:4mm 0}
+.g2{grid-template-columns:1fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{border:.6pt solid var(--line);padding:3.5mm 4mm}
+.card .k{font-family:Oswald,sans-serif;font-size:7pt;font-weight:600;letter-spacing:1.5px;color:var(--accent);margin-bottom:1.8mm;text-transform:uppercase}
+.card h3{font-size:10.5pt;text-transform:uppercase;letter-spacing:.5px;margin-bottom:1.8mm}
+.card p{font-size:8.7pt;color:var(--muted)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin:4mm 0}
+
+/* ---- hyrox ---- */
+.stations{display:grid;grid-template-columns:repeat(4,1fr);gap:2mm;margin:4mm 0}
+.st{border:.6pt solid var(--line);padding:2.6mm 3mm;background:var(--soft)}
+.st span{font-family:Oswald,sans-serif;font-size:7pt;letter-spacing:1.2px;color:var(--accent);display:block;margin-bottom:1mm}
+.st b{display:block;font-family:Oswald,sans-serif;font-weight:500;font-size:9.4pt;color:var(--ink);line-height:1.15}
+.st i{display:block;font-style:normal;font-size:8pt;color:var(--dim);margin-top:.6mm}
+.reqs{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5mm;margin:4mm 0}
+.req{border:.6pt solid var(--line);border-top:1.6pt solid var(--accent);padding:2.8mm 3mm}
+.req b{display:block;font-family:Oswald,sans-serif;font-weight:500;font-size:9pt;color:var(--ink);letter-spacing:.3px;margin-bottom:1.2mm;text-transform:uppercase}
+.req p{font-size:8pt;color:var(--muted);margin:0}
+
+/* ---- zones ---- */
+.zones{margin:4mm 0 0;border-top:.8pt solid var(--line)}
+.zone{display:grid;grid-template-columns:52mm 1fr;gap:7mm;padding:4.5mm 0;border-bottom:.6pt solid var(--line)}
+.zone-id .zn{font-family:Oswald,sans-serif;font-weight:600;font-size:7.4pt;letter-spacing:1.6px;color:var(--accent);display:block;margin-bottom:1.6mm}
+.zone-id h3{font-size:13pt;text-transform:uppercase;letter-spacing:.4px;line-height:1.1}
+.zone-id .zt{display:block;font-family:Inter,sans-serif;font-weight:400;font-size:8pt;letter-spacing:0;text-transform:none;color:var(--dim);margin-top:1.8mm;line-height:1.4}
+.zone-body p{font-size:9pt;color:var(--muted)}
+.kit{margin-top:2.8mm;padding-top:2.4mm;border-top:.5pt solid var(--line-2)}
+.kit b{display:block;font-family:Oswald,sans-serif;font-weight:500;font-size:7pt;letter-spacing:1.5px;text-transform:uppercase;color:var(--dim);margin-bottom:1.8mm}
+.chips{display:flex;flex-wrap:wrap;gap:1.4mm}
+.chip{font-size:7.8pt;color:var(--muted);background:var(--soft);border:.5pt solid var(--line);border-radius:10pt;padding:.9mm 2.4mm;line-height:1.3}
+
+/* ---- investment ---- */
+.big-figure{display:flex;flex-wrap:wrap;align-items:baseline;gap:2mm 6mm;border:.6pt solid #f3ceb8;border-left:2.4pt solid var(--accent);background:var(--accent-soft);padding:5mm 6mm;margin:4mm 0}
+.big-figure b{font-family:Oswald,sans-serif;font-weight:600;font-size:26pt;color:var(--ink);line-height:1}
+.big-figure > span{font-family:Oswald,sans-serif;font-size:8pt;letter-spacing:1.8px;text-transform:uppercase;color:var(--accent)}
+.big-figure .bf-note{font-family:Inter,sans-serif;font-size:8.6pt;letter-spacing:0;text-transform:none;color:var(--muted)}
+.big-figure em{flex:1 1 100%;font-style:normal;font-size:9pt;color:var(--muted);margin-top:1.5mm}
+
+/* ---- peaks ---- */
+.peaks{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5mm;margin:4mm 0}
+.peak{border:.6pt solid var(--line);background:var(--soft);padding:3.2mm 3.5mm}
+.peak b{display:block;font-family:Oswald,sans-serif;font-weight:600;font-size:15pt;color:var(--ink);margin-bottom:1.4mm}
+.peak span{display:block;font-family:Oswald,sans-serif;font-size:7pt;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:1.6mm}
+.peak.free span{color:var(--accent)}
+.peak.busy span{color:var(--dim)}
+.peak p{font-size:8pt;color:var(--muted);margin:0}
+
+/* ---- needs ---- */
+.needs{margin:4mm 0 0}
+.need{display:grid;grid-template-columns:12mm 1fr;gap:5mm;padding:4mm 0;border-top:.6pt solid var(--line)}
+.need:last-of-type{border-bottom:.6pt solid var(--line)}
+.need .nn{font-family:Oswald,sans-serif;font-weight:600;font-size:17pt;color:var(--accent);line-height:1;opacity:.5}
+.need h3{font-size:11.5pt;text-transform:uppercase;letter-spacing:.5px;margin-bottom:1.6mm}
+.need p{font-size:9pt;color:var(--muted)}
+.need.critical .nn{opacity:1}
+.need.critical h3{color:var(--accent)}
+
+/* ---- lists ---- */
+ul.list{list-style:none;margin:2.5mm 0;padding:0}
+ul.list li{position:relative;padding:1.6mm 0 1.6mm 5mm;color:var(--ink-2);font-size:8.9pt;border-bottom:.5pt solid var(--line-2)}
+ul.list li:last-child{border-bottom:0}
+ul.list li:before{content:'';position:absolute;left:.4mm;top:3.1mm;width:1.3mm;height:1.3mm;background:var(--accent)}
+ol.steps{list-style:none;counter-reset:s;margin:3mm 0 0;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding:2.6mm 0 2.6mm 11mm;border-bottom:.5pt solid var(--line-2);color:var(--ink-2);font-size:9.4pt}
+ol.steps li:last-child{border-bottom:0}
+ol.steps li:before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:2.6mm;font-family:Oswald,sans-serif;font-weight:600;font-size:8.6pt;letter-spacing:.8px;color:var(--accent)}
+
+/* ---- plan slot ---- */
+.plan-slot{border:1pt dashed #c3cad2;background:var(--soft);height:120mm;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10mm;margin:4mm 0 2mm}
+.plan-slot .ps-mark{width:11mm;height:11mm;border:.8pt solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:5mm;font-family:Oswald,sans-serif;font-size:14pt;color:var(--accent)}
+.plan-slot b{font-family:Oswald,sans-serif;font-weight:500;font-size:10.5pt;letter-spacing:1.9px;text-transform:uppercase;color:var(--ink);margin-bottom:2.5mm}
+.plan-slot p{font-size:8.8pt;color:var(--dim);max-width:110mm;margin:0}
+.fig-cap{font-size:8pt;color:var(--dim);font-style:italic}
+
+/* ---- footer ---- */
+.doc-foot{margin-top:8mm;padding-top:4mm;border-top:.8pt solid var(--line);font-size:8pt;color:var(--dim);display:flex;justify-content:space-between;gap:6mm;flex-wrap:wrap}
+.doc-foot b{font-family:Oswald,sans-serif;font-weight:600;color:var(--ink);letter-spacing:1.2px;text-transform:uppercase}
+
+/* ---- screen shell ---- */
+@media screen{
+  body{background:#e8ebee;padding:24px 16px 48px}
+  .doc{background:#fff;max-width:210mm;padding:16mm 15mm 18mm;box-shadow:0 10px 44px rgba(0,0,0,.13)}
+  .page{break-before:auto;margin-top:14mm;padding-top:10mm;border-top:1px dashed #d6dae0}
+  .cover{padding-top:6mm}
+  .screen-bar{max-width:210mm;margin:0 auto 14px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-family:Oswald,sans-serif;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:#6d757f}
+  .screen-bar a{color:#e05a12;border:1px solid #d6dae0;background:#fff;padding:7px 12px;border-radius:4px;margin-left:8px}
+  .screen-bar a:hover{border-color:#e05a12}
+}
+@media print{.screen-bar{display:none}.doc{box-shadow:none;padding:0;max-width:none}}
+@media screen and (max-width:760px){
+  .g2,.g3,.two-col,.zone,.need,.peaks,.blk,.dstep{grid-template-columns:1fr}
+  .stations,.reqs,.scale,.stats{grid-template-columns:1fr 1fr}
+  .doc{padding:10mm 8mm}
+  body{font-size:11pt}
+}
+</style>
+</head>
+<body>
+
+<div class="screen-bar">
+  <span>FORGE × Pádel Sant Pere de Ribes · Versión A4</span>
+  <span><a href="./index.html">Ver versión web</a><a href="javascript:window.print()">Imprimir / PDF</a></span>
+</div>
+
+<div class="doc">
+
+<!-- ===== COVER ===== -->
+<header class="cover">
+  <span class="eyebrow">Documento de trabajo · Punto de partida de conversación · Septiembre de 2026</span>
+  <h1>FORGE <span class="x">×</span> PÁDEL<span class="l2">Sant Pere de Ribes</span></h1>
+  <p class="sub">Operador del vertical deportivo &middot; 500 m&sup2; &middot; Programa deportivo y condiciones de encaje</p>
+  <p class="cred">Jo Soc Fit &middot; operadores del club n&uacute;mero 1 del mundo de la red Brooklyn Fitboxing</p>
+  <p class="intro">Vosotros montáis el club de pádel indoor de referencia del Garraf. Nosotros no venimos a alquilar una
+  planta dentro de vuestro recinto, venimos a <strong>operar toda su parte deportiva</strong>: el centro de rendimiento,
+  la programación, el club de running y el programa de entrenamiento para vuestros jugadores. Vosotros operáis el pádel,
+  la hostelería, el coworking y el espacio Détente. Un campus, dos especialistas.</p>
+
+  <dl class="cover-meta">
+    <div><dt>Emplazamiento</dt><dd>Sant Pere de Ribes, Garraf</dd></div>
+    <div><dt>Superficie de referencia</dt><dd>450 a 500 m², planta baja</dd></div>
+    <div><dt>Interlocutor</dt><dd>Joachim Antonsen</dd></div>
+    <div><dt>Contacto</dt><dd>joachim.antonsen@gmail.com</dd></div>
+  </dl>
+
+  <div class="callout quiet">
+    <div class="c-title">Cómo hay que leer esto</div>
+    <p>Nada de lo que hay aquí está cerrado, decidido ni comprometido. No es una propuesta ni una oferta. Es la forma
+    en la que hoy vemos la sala y la colaboración, escrita para que haya algo concreto sobre la mesa y la conversación
+    no empiece en el aire. La primera parte es el concepto deportivo, que es de lo que queremos hablar. La segunda
+    parte es el marco económico, con nuestros números abiertos, separada al final a propósito.</p>
+  </div>
+
+  <div class="toc">
+    <div class="tp">Parte 1 · El concepto</div>
+    <div><b>01</b> La visión</div>
+    <div><b>02</b> La apuesta Hyrox</div>
+    <div><b>03</b> Las cinco zonas</div>
+    <div><b>04</b> Superficie y reparto de zonas</div>
+    <div><b>05</b> El material y la inversión</div>
+    <div><b>06</b> La pista de carrera y el club de running</div>
+    <div><b>07</b> Los socios y los flujos</div>
+    <div><b>08</b> El impacto en el recinto</div>
+    <div><b>09</b> Padel Performance</div>
+    <div><b>10</b> Lo que necesitamos del edificio</div>
+    <div><b>11</b> Sí a la apertura a las 7:00 o 6:30</div>
+    <div><b>12</b> Quiénes somos</div>
+    <div><b>13</b> Implantación propuesta</div>
+    <div class="tp">Parte 2 · Marco económico</div>
+    <div><b>14</b> Los tres escenarios de ingresos</div>
+    <div><b>15</b> Hasta dónde podemos llegar en renta</div>
+    <div><b>16</b> El marco de colaboración</div>
+  </div>
+</header>
+
+<!-- ===== PARTE 1 + 01 ===== -->
+<section class="page">
+  <div class="part">
+    <span class="p-k">Parte 1</span>
+    <h2>El concepto</h2>
+    <p>La sala, las zonas, el material, la pista de carrera, los socios que trae, el programa para vuestros jugadores y
+    lo que necesitamos del edificio para que todo esto se pueda construir.</p>
+  </div>
+
+  <div class="sec-head"><span class="sec-num">01</span><h2>La visión</h2></div>
+  <p class="sec-lead">Un centro de rendimiento de 450 a 500 m² construido alrededor de una sola idea: motor aeróbico
+  y fuerza. Hyrox como columna vertebral, halterofilia y peso libre como base, y un club de running que sale del
+  recinto y vuelve a él.</p>
+
+  <div class="callout hard">
+    <div class="c-title">El reparto, en una frase</div>
+    <p class="big">Vosotros operáis el pádel, la hostelería, el coworking y el espacio Détente. FORGE opera todo lo que
+    es entrenamiento, rendimiento físico y programación deportiva del recinto.</p>
+    <p><strong>Un campus, dos especialistas.</strong> Es la lectura que nos parece más limpia y la que recogimos de
+    vuestras propias conversaciones: no buscáis un gimnasio cualquiera metido dentro, buscáis que alguien opere la zona
+    deportiva con el mismo nivel con el que vosotros vais a operar el pádel.</p>
+    <p>En concreto, nuestro perímetro cubre la sala de rendimiento, las clases dirigidas, el open box, el entrenamiento
+    personal, el club de running y la pista de carrera, la programación deportiva y los eventos de rendimiento del
+    recinto. El recinto sigue siendo vuestro, nosotros operamos un vertical dentro.</p>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <p>No es un gimnasio con máquinas. No es una sala de musculación. Es una sala de entrenamiento de verdad, con
+      programación seria, coaches formados y seguimiento del socio.</p>
+      <p>Dentro de vuestro recinto eso se convierte en una frase que nadie más puede decir en España:
+      <strong>un solo lugar donde se juega, se entrena y se corre</strong>. El pádel llena, el entrenamiento retiene,
+      y la carrera es lo que ata las dos cosas.</p>
+    </div>
+    <div>
+      <p>La cultura es lo que de verdad se vende. Comunidad inclusiva, trato cercano, gente acompañada, progreso sin
+      juicios. Esa parte no se compra con equipamiento y es la que separa un centro que se llena de uno que se queda
+      a medias.</p>
+      <p>Y es la parte que protege al club: cualquiera puede poner 16 pistas, muy pocos saben montar y sostener una
+      comunidad de entrenamiento con coaches buenos y programación real.</p>
+    </div>
+  </div>
+
+  <div class="grid g3">
+    <div class="card"><div class="k">Pilar 01</div><h3>Motor aeróbico</h3><p>La prioridad declarada del centro y lo
+    que más se descuida en el resto de salas. Es la variable que más cambia la salud de un socio adulto.</p></div>
+    <div class="card"><div class="k">Pilar 02</div><h3>Fuerza real</h3><p>Halterofilia bien enseñada, peso libre y
+    una rampa de entrada con máquinas para el que llega desde el pádel sin experiencia técnica.</p></div>
+    <div class="card"><div class="k">Pilar 03</div><h3>Carrera</h3><p>Un bucle perimetral dentro del recinto y un
+    club de running propio. Entrenar la carrera y las estaciones en la misma sesión, sin salir.</p></div>
+  </div>
+</section>
+
+<!-- ===== 02 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">02</span><h2>La apuesta Hyrox</h2></div>
+  <p class="sec-lead">Hyrox es la competición de fitness de mayor crecimiento del mundo y la puerta de entrada natural
+  del deportista adulto que no quiere competir en CrossFit pero sí quiere un objetivo.</p>
+
+  <p>Una carrera son <strong>8 kilómetros corriendo, partidos en ocho tramos de 1 km</strong>, alternados con ocho
+  estaciones:</p>
+
+  <div class="stations">
+    <div class="st"><span>01</span><b>SkiErg</b><i>1.000 m</i></div>
+    <div class="st"><span>02</span><b>Empuje de trineo</b><i>50 m</i></div>
+    <div class="st"><span>03</span><b>Arrastre de trineo</b><i>50 m</i></div>
+    <div class="st"><span>04</span><b>Burpee broad jump</b><i>80 m</i></div>
+    <div class="st"><span>05</span><b>Remo</b><i>1.000 m</i></div>
+    <div class="st"><span>06</span><b>Farmers carry</b><i>200 m</i></div>
+    <div class="st"><span>07</span><b>Zancadas con sandbag</b><i>100 m</i></div>
+    <div class="st"><span>08</span><b>Wall balls</b><i>100 repeticiones</i></div>
+  </div>
+
+  <div class="callout hard">
+    <p class="big">Leer esa lista es leer el plano de nuestra sala.</p>
+    <p>Cada estación impone una exigencia física al espacio, y son exigencias que un gimnasio convencional no cumple.
+    Por eso el programa deportivo y el proyecto de arquitectura son, en este caso, la misma conversación.</p>
+  </div>
+
+  <div class="reqs">
+    <div class="req"><b>Calle recta</b><p>15 m libres como mínimo para trineo, farmers carry y burpees, con suelo apto
+    para arrastrar carga.</p></div>
+    <div class="req"><b>Altura libre real</b><p>Wall balls a 3,05 m con vuelo de balón, dominadas y muscle-up en rig,
+    trepa de cuerda.</p></div>
+    <div class="req"><b>Endurance de competición</b><p>Máquinas de gama de competición y en número suficiente, no
+    bicicletas de spinning.</p></div>
+    <div class="req"><b>Kilómetros de carrera</b><p>Accesibles desde la puerta, sin mandar a la gente a la carretera y
+    perder el control de la sesión.</p></div>
+  </div>
+
+  <p><strong>Casi ningún centro en España reúne las cuatro.</strong> Los que se anuncian como "Hyrox" suelen ser un box
+  con dos SkiErg. Aquí tenemos la oportunidad de construir uno de verdad, y de hacerlo desde el plano en vez de
+  intentar encajarlo después en una nave que no estaba pensada para eso.</p>
+
+  <div class="callout">
+    <div class="c-title">Y esto no es solo un argumento para nosotros</div>
+    <p>Un centro Hyrox real en el recinto, con vuestra pista central de 250 plazas al lado, convierte el club en
+    <strong>sede natural de eventos, carreras y clasificatorios</strong>. Es tráfico, es prensa y es marca, y no cuesta
+    ni una sola pista de pádel.</p>
+  </div>
+</section>
+
+<!-- ===== 03 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">03</span><h2>Las cinco zonas</h2></div>
+  <p class="sec-lead">Cada zona tiene un papel concreto, un tipo de sesión que ocurre dentro y un material concreto.
+  El orden en el que están escritas es el orden de prioridad con el que las defenderíamos si hubiera que recortar.</p>
+
+  <div class="zones">
+    <div class="zone">
+      <div class="zone-id"><span class="zn">Zona 01</span><h3>Hyrox Lane
+        <span class="zt">La calle. Dos carriles paralelos de 15 a 20 m de recta libre por 4 m de ancho.</span></h3></div>
+      <div class="zone-body">
+        <p>Es el elemento que define el proyecto y el que condiciona la forma del local. Aquí pasa todo lo que necesita
+        distancia: empuje y arrastre de trineo, farmers carry, zancadas con sandbag, burpee broad jump y carrera de
+        aceleración. En el extremo, la pared de wall ball con dianas a 2,75 m y 3,05 m.</p>
+        <p>El suelo es específico, apto para arrastrar trineo cargado, y no es caucho blando porque el trineo lo
+        destroza. <strong>Es lo primero que se ve al entrar</strong> y lo que hace que la sala no se parezca a ninguna
+        otra de la comarca.</p>
+        <div class="kit"><b>Material</b><div class="chips">
+          <span class="chip">Trineos de empuje</span><span class="chip">Trineos de arrastre con cuerda</span>
+          <span class="chip">Mangos de farmers carry</span><span class="chip">Sandbags de 10 a 40 kg</span>
+          <span class="chip">Wall balls de 4 a 14 kg</span><span class="chip">Dianas a 2,75 y 3,05 m</span>
+          <span class="chip">Pavimento técnico de arrastre</span>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="zone">
+      <div class="zone-id"><span class="zn">Zona 02</span><h3>Engine Room
+        <span class="zt">El motor aeróbico. La prioridad número uno del centro.</span></h3></div>
+      <div class="zone-body">
+        <p>Es la parte que más se descuida en el resto de salas y la que más importa. Aquí se construye la capacidad
+        aeróbica, que es <strong>lo que separa a quien termina una Hyrox de quien la sufre</strong>, y lo que de verdad
+        cambia la vida deportiva de un socio de 45 años.</p>
+        <p>La clave no es tener las máquinas, es tener suficientes. Casi todos los centros fallan en lo mismo: cuatro
+        remos para una clase de dieciséis. Aquí la Engine Room está dimensionada para que una clase entera trabaje a
+        la vez.</p>
+        <div class="kit"><b>Material</b><div class="chips">
+          <span class="chip">Remos de competición</span><span class="chip">SkiErg</span>
+          <span class="chip">BikeErg</span><span class="chip">Bicicletas de asalto</span>
+          <span class="chip">Cintas curvas sin motor</span><span class="chip">Monitores y cronómetro de sala</span>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="zone">
+      <div class="zone-id"><span class="zn">Zona 03</span><h3>Open Box
+        <span class="zt">El suelo de WOD. El corazón de la sala y su mayor superficie.</span></h3></div>
+      <div class="zone-body">
+        <p>Un rig central que recorre la zona y un suelo despejado para clases dirigidas de 16 a 18 personas. Aquí
+        pasan el WOD del día, las clases de Cross Training, las sesiones específicas de Hyrox y el entrenamiento libre
+        en horario de open box.</p>
+        <p>Es la zona que marca el ritmo del centro: es donde se forma la comunidad, donde el socio nuevo conoce a los
+        demás y donde se decide si vuelve el martes siguiente.</p>
+        <div class="kit"><b>Material</b><div class="chips">
+          <span class="chip">Rig central modular</span><span class="chip">Barras de dominadas</span>
+          <span class="chip">Anillas</span><span class="chip">Cuerdas de trepa</span>
+          <span class="chip">Estaciones de suspensión</span><span class="chip">Cajones de salto</span>
+          <span class="chip">Combas y balones medicinales</span><span class="chip">Caucho de 20 mm</span>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="zone">
+      <div class="zone-id"><span class="zn">Zona 04</span><h3>Zona de Fuerza
+        <span class="zt">Halterofilia, peso libre y máquinas. Una sola zona, no dos.</span></h3></div>
+      <div class="zone-body">
+        <p>Es el mismo inventario de barras, discos y racks, el mismo coach la supervisa, y separarlas en 500 m² sería
+        duplicar material y perder circulación entre las dos. Dentro conviven dos subzonas.</p>
+        <p><strong>La banda de plataformas</strong>, contra un muro. Plataformas de halterofilia completas con racks,
+        barras olímpicas de competición y discos de caucho. Es donde se levanta pesado y donde se suelta carga.
+        Halterofilia bien enseñada es la técnica más rentable que puede aprender un adulto: transfiere a todo lo demás,
+        previene lesiones y engancha.</p>
+        <p><strong>El resto de la zona</strong>, pegada a la anterior. Mancuernas en rango completo, kettlebells, racks
+        de sentadilla y press, bancos, más dos o tres máquinas de fuerza bien elegidas y una estación de poleas. Las
+        máquinas no están por capricho: son lo que permite que <strong>el socio que llega desde el pádel, con 50 años y
+        sin experiencia técnica, entrene fuerza el primer día</strong> sin riesgo y sin sentirse fuera de lugar. Es la
+        rampa de entrada al resto de la sala.</p>
+        <p><strong>Lo único que no se unifica es el suelo.</strong> La banda de plataformas necesita caucho de alta
+        densidad y, idealmente, un rebaje en la solera para quedar enrasada. El resto de la zona va con caucho estándar.
+        Son dos especificaciones técnicas dentro de una sola zona, y es exactamente lo que hay que decirle a vuestro
+        equipo de arquitectura.</p>
+        <div class="kit"><b>Material</b><div class="chips">
+          <span class="chip">Plataformas completas de halterofilia</span>
+          <span class="chip">Barras olímpicas de competición</span><span class="chip">Barras de mujer y técnicas</span>
+          <span class="chip">Discos de caucho bumper y calibrados</span>
+          <span class="chip">Racks de sentadilla y press</span><span class="chip">Mancuernas de 2 a 50 kg</span>
+          <span class="chip">Kettlebells en rango completo</span><span class="chip">Bancos planos e inclinados</span>
+          <span class="chip">2 o 3 máquinas de fuerza</span><span class="chip">Estación de poleas</span>
+          <span class="chip">Caucho denso 40-50 mm en plataformas, 20-30 mm en el resto</span>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="zone">
+      <div class="zone-id"><span class="zn">Zona 05</span><h3>Movilidad
+        <span class="zt">Calentamiento, amplitud, vuelta a la calma y trabajo preventivo.</span></h3></div>
+      <div class="zone-body">
+        <p>Zona libre con espalderas, material de movilidad y espacio de suelo. Es donde pasa el trabajo preventivo de
+        hombro, codo, lumbares y cadera que necesita un jugador de pádel, y donde empieza y termina cada sesión del
+        resto de la sala.</p>
+        <p>Es la zona más barata del centro y, para vuestro jugador de pádel, probablemente la más útil.</p>
+        <div class="kit"><b>Material</b><div class="chips">
+          <span class="chip">Espalderas</span><span class="chip">Foam rollers y pelotas de liberación</span>
+          <span class="chip">Bandas elásticas</span><span class="chip">Esterillas</span>
+          <span class="chip">Material de movilidad de hombro y cadera</span>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 + 05 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">04</span><h2>Superficie y reparto de zonas</h2></div>
+  <p class="sec-lead">Orden de magnitud sobre 500 m² útiles. Es nuestro zonificado de partida y se ajusta en cuanto
+  tengamos el plano real del local.</p>
+
+  <div class="tbl-wrap">
+    <table class="t-surface">
+      <caption>Escenario de referencia · 500 m² útiles</caption>
+      <thead><tr><th>Zona</th><th class="num">m²</th><th>Peso en el proyecto</th></tr></thead>
+      <tbody>
+        <tr><td>Hyrox Lane</td><td class="num">60</td><td>Innegociable, define la forma del local</td></tr>
+        <tr><td>Engine Room</td><td class="num">70</td><td>Prioridad declarada</td></tr>
+        <tr><td>Open Box y rig</td><td class="num">140</td><td>El corazón</td></tr>
+        <tr><td>Zona de Fuerza: plataformas, peso libre y máquinas</td><td class="num">125</td><td>Condiciona suelo y acústica</td></tr>
+        <tr><td>Movilidad y calentamiento</td><td class="num">30</td><td></td></tr>
+        <tr><td>Almacén, puesto de coach y limpieza</td><td class="num">35</td><td></td></tr>
+        <tr><td>Circulación</td><td class="num">40</td><td></td></tr>
+        <tr class="total"><td>Total</td><td class="num">500</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <span class="conf">Confianza: <b>moderada</b> · se ajusta con el plano real</span>
+
+  <h3 class="sub">La escala, de arriba abajo</h3>
+  <p>Para que no queden dos afirmaciones sueltas, esto se lee como una sola escala descendente:</p>
+  <div class="scale">
+    <div class="sc best"><b>500 m&sup2;</b><span>Lo que pedimos</span><p>El programa completo, las cinco zonas con su
+    superficie útil y el escenario alto alcanzable.</p></div>
+    <div class="sc ok"><b>450 m&sup2;</b><span>El suelo</span><p>Por debajo de aquí el programa empieza a perder
+    piezas. Es el mínimo con el que seguiríamos firmando sin cambiar la naturaleza del proyecto.</p></div>
+    <div class="sc warn"><b>400 m&sup2;</b><span>Funciona con recortes reales</span><p>Se recorta Engine Room, se pasa
+    de seis a cuatro plataformas dentro de la Zona de Fuerza, el suelo de WOD baja a clases de 14 y queda una sola
+    máquina de fuerza. <strong>La calle Hyrox no se toca.</strong></p></div>
+    <div class="sc no"><b>300 m&sup2;</b><span>No lo recomendamos</span><p>Hay que elegir entre la calle Hyrox y la
+    Zona de Fuerza completa, el techo de socios baja a 200 o 250 y la ecuación deja de sostenerse.</p></div>
+  </div>
+
+  <div class="sec-head" style="margin-top:9mm"><span class="sec-num">05</span><h2>El material y la inversión</h2></div>
+  <p class="sec-lead">Una planta entregada en bruto no es una sala de entrenamiento. Entre acondicionar el espacio y
+  equiparlo con material de verdad, la cifra es la que es, y preferimos ponerla encima de la mesa desde el primer
+  día.</p>
+
+  <div class="big-figure">
+    <span>Inversión de FORGE</span>
+    <b>300.000 €</b>
+    <span class="bf-note">IVA incluido</span>
+    <em>Acondicionamiento completo de la planta y equipamiento íntegro de las cinco zonas, financiado por FORGE.</em>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <p>No es una línea de negociación ni un argumento para regatear, es <strong>la medida de lo en serio que nos
+      tomamos el proyecto</strong>. Es dinero que entra en vuestro edificio, que se queda dentro de vuestro edificio y
+      que asumimos nosotros.</p>
+      <p>Es una cifra única, no una horquilla, y eso es deliberado: <strong>es un número que podemos defender línea por
+      línea</strong>. Una horquilla que sube hasta 400.000 € no informa mejor, solo invita a pedir el detalle.</p>
+      <p>Y no sale de una media de mercado. <strong>El acondicionamiento de nuestro club de Sant Boi fue de unos
+      256 €/m²</strong>, y esta cifra está construida sobre ese coste real. El desglose existe y lo compartimos cuando
+      toque, pero eso pertenece a otra reunión.</p>
+    </div>
+    <div>
+      <p>Sobre la calidad del material, una sola cosa: <strong>gama de competición, no material genérico de
+      gimnasio</strong>. Remos y SkiErg de los que se usan en carrera oficial, barras olímpicas y discos calibrados,
+      rig de nivel profesional, cintas curvas sin motor y pavimentos técnicos diferenciados por zona.</p>
+      <p>Es la diferencia entre un centro al que la gente viene a entrenar en serio y una sala de máquinas más.
+      También es lo que aguanta quince años de uso intensivo sin tener que reponerlo entero a los tres años.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">06</span><h2>La pista de carrera y el club de running</h2></div>
+  <p class="sec-lead">Es la petición más barata de todo el dossier y la que más diferencia el proyecto. También es la
+  que más depende de vosotros, porque se decide en el plano de implantación y no se puede añadir después.</p>
+
+  <p>Una carrera Hyrox son 8 km de carrera repartidos en ocho tramos de 1 km. La carrera no es un complemento del
+  entrenamiento funcional moderno, <strong>es la mitad</strong>. Y la capacidad aeróbica es lo que de verdad cambia la
+  salud de un socio adulto. Un centro de entrenamiento funcional sin acceso inmediato a kilómetros de carrera está
+  cojo: manda a la gente a la carretera, pierde el control de la sesión y no puede programar series en condiciones.</p>
+
+  <div class="callout hard">
+    <div class="c-title">Lo que pedimos</div>
+    <p class="big">En un mundo ideal, un bucle de 250 a 500 m.</p>
+    <p>Con 250 m, 1 km son cuatro vueltas. Con 500 m son dos, y entonces ya no es un bucle, es <strong>una pista de
+    entrenamiento de verdad</strong>, con rectas largas de 100 a 150 m y series limpias. Con vuestros 10.400 m² de
+    terreno más la parcela de aparcamiento, los 500 m son perfectamente imaginables si se dibujan desde el principio.</p>
+  </div>
+
+  <p>El trazado es perimetral, aprovechando el borde de las pistas exteriores, el perímetro del aparcamiento y las
+  zonas de paso que de todas formas vais a pavimentar. Anchura de 2 m, curvas de radio amplio sin ángulos de 90° secos,
+  pavimento continuo y regular (no hace falta tartán), iluminación aprovechando la del aparcamiento y marcas cada 50 m
+  pintadas en el suelo. Y si el recorrido interior de la nave lo permite, un tramo cubierto para los días de temporal,
+  aunque sea corto.</p>
+
+  <div class="callout">
+    <div class="c-title">Por qué no es caro</div>
+    <p>Casi todo el trazado es pavimento que ya está en vuestro programa. Lo que añade el bucle es continuidad del
+    recorrido, anchura suficiente en dos o tres tramos, radios de giro amables y pintura. Es una decisión de plano, no
+    de presupuesto. Trazada desde el principio cuesta poco. <strong>Añadida después es imposible</strong>, porque los
+    bordillos, las jardineras y las plazas de aparcamiento ya están donde están.</p>
+  </div>
+
+  <h3 class="sub">Qué gana el club</h3>
+  <div class="grid g2">
+    <div class="card"><h3>Un titular que nadie tiene</h3><p>"El único club donde se juega, se entrena y se corre" es
+    un argumento de comunicación que ningún club de pádel de España tiene hoy. Y es verdadero, que es lo que lo hace
+    defendible.</p></div>
+    <div class="card"><h3>Capacidad de acoger eventos</h3><p>Con la pista central de 250 plazas, la nave y un bucle de
+    carrera homologable para uso interno, el recinto puede albergar carreras híbridas, clasificatorios y eventos de
+    marca. Eso llena el aparcamiento, el bar y el restaurante un sábado entero sin ocupar una sola pista.</p></div>
+    <div class="card"><h3>Uso en franja muerta</h3><p>El club de running entrena a las 7:00, a las 13:30 y a las
+    20:00. La franja de mañana y la de mediodía son exactamente las horas en las que un club de pádel está vacío, y
+    todos esos corredores pasan por la barra.</p></div>
+    <div class="card"><h3>Gente que no juega al pádel</h3><p>Uso del recinto por personas que no vienen a jugar, que
+    es la definición literal del tráfico diurno propio que vuestra memoria dice esperar de FORGE.</p></div>
+  </div>
+
+  <h3 class="sub">El club de running</h3>
+  <ul class="list">
+    <li>Dos o tres salidas semanales en grupo, con coach y grupos por ritmo</li>
+    <li>Series en el bucle, tirada larga por el Garraf y los caminos de la zona, rodaje suave por el paseo marítimo</li>
+    <li>Preparación específica para Hyrox, para carreras populares de la comarca y para media maratón</li>
+    <li>Un evento propio al año, en el recinto, con el club como sede</li>
+  </ul>
+  <p>El club de running es además el captador más barato que existe. La gente prueba corriendo gratis un martes, y a
+  las seis semanas se apunta a la sala.</p>
+
+  <div class="callout quiet">
+    <div class="c-title">Nivel de confianza</div>
+    <p>Que la pista es viable con vuestros 10.400 m² más la parcela de aparcamiento: <strong>moderado</strong>,
+    pendiente de ver el plano de implantación. Que el coste incremental es bajo si se decide ahora:
+    <strong>alto</strong>. Que es imposible añadirla después: <strong>alto</strong>.</p>
+  </div>
+</section>
+
+<!-- ===== 07 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">07</span><h2>Los socios y los flujos</h2></div>
+  <p class="sec-lead">Cuánta gente mueve esta sala, de dónde viene, cuánta acaba reservando pista y a qué horas entra
+  en el recinto. Es la parte que más os afecta a vosotros y la que menos aparece en un plano.</p>
+
+  <h3 class="sub">Cuántos socios</h3>
+  <p>El techo de socios no lo pone la demanda, <strong>lo ponen los metros y la capacidad de clase</strong>. Con
+  140 m² de suelo de WOD caben clases de 16 a 18 personas, y a partir de ahí todo es aritmética de horario.</p>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Superficie de la sala</th><th class="num">Socios en régimen de crucero</th></tr></thead>
+      <tbody>
+        <tr class="hl"><td>500 m²</td><td class="num">300 a 400</td></tr>
+        <tr><td>400 m²</td><td class="num">250 a 320</td></tr>
+        <tr><td>300 m²</td><td class="num">200 a 250</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">La estructura de cuotas</h3>
+  <p>Precios de referencia a día de hoy, pensados para el perfil del Garraf y para convivir con un club de pádel.</p>
+  <div class="tbl-wrap">
+    <table class="t-cuotas">
+      <caption>Modalidades de abono y productos sueltos</caption>
+      <thead><tr><th>Modalidad</th><th class="num">Precio</th></tr></thead>
+      <tbody>
+        <tr><td>Libre / open box, sin clases</td><td class="num">55 €</td></tr>
+        <tr><td>2 días por semana</td><td class="num">69 €</td></tr>
+        <tr><td>3 días por semana</td><td class="num">85 €</td></tr>
+        <tr><td>Ilimitado</td><td class="num">99 €</td></tr>
+        <tr class="hl"><td>Ilimitado + acceso Détente &amp; Relaxation</td><td class="num">129 €</td></tr>
+        <tr><td>Club de running, solo carrera</td><td class="num">35 € al mes</td></tr>
+        <tr><td>Bono de 10 clases</td><td class="num">110 €</td></tr>
+        <tr><td>Clase suelta</td><td class="num">18 €</td></tr>
+        <tr><td>Entrenamiento personal, sesión</td><td class="num">45 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Con esta estructura, <strong>la cuota media ponderada se sitúa en el entorno de 86 €</strong>. Y fijaos en la
+  última modalidad de abono: <strong>la que incluye el acceso al espacio Détente es una venta directa para el club
+  desde el primer mes</strong>, facturada por entrada y sin que vengáis a buscarla.</p>
+
+  <h3 class="sub">De dónde vienen</h3>
+  <div class="two-col">
+    <div>
+      <p>Nuestra estimación es que <strong>alrededor de un tercio</strong> de los socios de FORGE salen de la base de
+      jugadores del club, y <strong>dos tercios del mercado local del Garraf</strong> que todavía no era cliente del
+      recinto.</p>
+      <p>Dicho de otra forma, y es el punto importante: <strong>FORGE no absorbe vuestra clientela, trae clientela
+      nueva al recinto</strong>. La sala capta en un mercado que vuestras pistas no estaban tocando.</p>
+    </div>
+    <div>
+      <p>Y el flujo va en las dos direcciones. Calculamos que <strong>entre un 15% y un 20% de los socios de FORGE
+      acaban reservando pista</strong>, gente que en muchos casos no habría entrado nunca en un club de pádel.</p>
+      <p>En volumen diario, entre 300 y 400 socios generan del orden de <strong>110 a 130 visitas adicionales al
+      recinto cada día</strong>, repartidas en tres franjas.</p>
+      <p class="note">Y esa conversión de jugador de pádel a socio de FORGE no es una hipótesis suelta, tiene un
+      producto concreto detrás: el programa <strong>Padel Performance</strong> de la sección 09 es el mecanismo por el
+      que ocurre.</p>
+    </div>
+  </div>
+
+  <h3 class="sub">Los horarios, que es el argumento clave</h3>
+  <p>Un centro de entrenamiento funcional tiene tres puntas al día, y dos de ellas caen exactamente donde un club de
+  pádel está vacío.</p>
+  <div class="peaks">
+    <div class="peak free"><span>Punta 1 · Franja muerta</span><b>6:30 a 9:00</b><p>Entrenamiento antes de trabajar.
+    Hoy no tiene alternativa seria en la comarca y el club está cerrado o casi.</p></div>
+    <div class="peak free"><span>Punta 2 · Franja muerta</span><b>12:00 a 14:00</b><p>Mediodía. Sesión corta, club de
+    running y consumo directo en barra y restaurante.</p></div>
+    <div class="peak busy"><span>Punta 3 · Compartida</span><b>18:00 a 21:00</b><p>La única franja compartida. Es
+    donde hay que dimensionar juntos vestuarios y duchas.</p></div>
+  </div>
+
+  <div class="callout">
+    <p><strong>FORGE llena las horas vacías del recinto.</strong> Dos de nuestras tres puntas son horas en las que hoy
+    el aparcamiento está vacío, la barra no factura y las pistas no se reservan. Eso es facturación de hostelería en
+    franjas que hoy no existen en el plan, y es gente entrando en el edificio a las 7 de la mañana.</p>
+  </div>
+
+  <span class="conf">Confianza: <b>moderada</b> · estimaciones nuestras a partir de centros comparables, no proyecciones auditadas</span>
+
+  <div class="sec-head" style="margin-top:9mm"><span class="sec-num">08</span><h2>El impacto en el recinto</h2></div>
+  <p class="sec-lead">Cuatro efectos, y ninguno de ellos exige que vosotros operéis nada.</p>
+  <div class="grid g2">
+    <div class="card"><div class="k">Efecto 01</div><h3>Más tiempo dentro, más ticket</h3><p>Quien entrena y juega
+    pasa el doble de tiempo en el recinto que quien solo juega, y consume en consecuencia. Café, batido, agua, comida
+    y sobremesa. Cada paso de esa cadena es facturación de la barra y del restaurante.</p></div>
+    <div class="card"><div class="k">Efecto 02</div><h3>Retención de vuestra propia base</h3><p>El jugador de pádel se
+    lesiona de forma sistemática de hombro, codo, lumbares y rodilla. Un jugador lesionado deja de reservar pista,
+    deja de consumir y muchas veces no vuelve. El trabajo de fuerza y movilidad es lo que hace que siga jugando.</p></div>
+    <div class="card"><div class="k">Efecto 03</div><h3>Una propuesta difícil de copiar</h3><p>Cualquiera puede poner
+    16 pistas. Muy pocos saben montar y sostener una comunidad de entrenamiento con coaches buenos y programación
+    real. Las pistas se replican, una comunidad no. Ese es el foso del recinto, no solo el nuestro.</p></div>
+    <div class="card"><div class="k">Efecto 04</div><h3>Ingreso nuevo, cero operación</h3><p>FORGE pone equipamiento,
+    coaches, dirección deportiva, gestión, marca y captación, y asume el riesgo operativo del vertical. La carga de
+    gestión de la sala no entra en vuestra estructura en ningún momento.</p></div>
+  </div>
+</section>
+
+<!-- ===== 09 PADEL PERFORMANCE ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">09</span><h2>Padel Performance</h2></div>
+  <p class="sec-lead">El programa para vuestros jugadores. Todo lo demás de este dossier es una sala de entrenamiento
+  dentro de vuestro recinto. Esto es entrenamiento <strong>hecho para vuestros jugadores</strong>, y es la pieza que
+  conecta directamente nuestro negocio con el vuestro.</p>
+
+  <h3 class="sub">El problema, dicho sin rodeos</h3>
+  <p>El pádel es un deporte que lesiona. No es una opinión, es un patrón documentado y cualquiera que lleve un club lo
+  ve en su propia base de socios.</p>
+
+  <div class="tbl-wrap">
+    <table class="t-lesion">
+      <caption>Dónde se lesiona un jugador de pádel</caption>
+      <thead><tr><th>Zona</th><th>Por qué</th><th>Gesto que la provoca</th></tr></thead>
+      <tbody>
+        <tr><td>Hombro</td><td>Sobrecarga del manguito rotador y del complejo escapular</td><td>Remate y bandeja, por encima de la cabeza</td></tr>
+        <tr><td>Codo</td><td>Epicondilitis, el famoso "codo de pádel"</td><td>Impacto repetido y empuñadura tensa</td></tr>
+        <tr><td>Lumbares</td><td>Rotación con extensión bajo carga</td><td>Bandeja, víbora, giros en apoyo</td></tr>
+        <tr><td>Rodilla</td><td>Desaceleración y cambios de dirección</td><td>Frenadas, arrancadas laterales</td></tr>
+        <tr><td>Tobillo</td><td>Esguince lateral</td><td>Cambios de dirección bruscos</td></tr>
+        <tr><td>Aquiles</td><td>Sobrecarga por impulsos explosivos</td><td>Salidas y saltos repetidos</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <span class="conf">Confianza: <b>alta</b> sobre el patrón · <b>moderada</b> sobre la incidencia exacta en vuestro público</span>
+
+  <div class="callout hard" style="margin-top:4mm">
+    <p class="big">Un jugador lesionado deja de reservar pista.</p>
+    <p>Deja de consumir en la barra, deja de venir a los torneos, y con frecuencia no vuelve, o vuelve seis meses
+    después con la mitad del hábito perdido. Cada lesión evitada es un abono que se mantiene y unas reservas que se
+    siguen produciendo. Dicho de otra forma: <strong>nadie compra "fuerza", todo el mundo compra seguir jugando</strong>.</p>
+  </div>
+
+  <h3 class="sub">El programa, cinco bloques</h3>
+  <p>Diseñados alrededor de la lista de arriba. No es una clase genérica con la etiqueta "pádel" puesta encima.</p>
+
+  <div class="blocks">
+    <div class="blk">
+      <span class="bn">01</span>
+      <div>
+        <h4>Valoración inicial</h4>
+        <p>Sesión individual con informe: movilidad de hombro y cadera, estabilidad monopodal, asimetrías rotacionales,
+        mecánica de frenada. El jugador entiende su propio riesgo en veinte minutos, y a partir de ahí ya no hay que
+        convencerlo de nada.</p>
+      </div>
+    </div>
+    <div class="blk">
+      <span class="bn">02</span>
+      <div>
+        <h4>Bloque preventivo</h4>
+        <p>Manguito rotador y control escapular, carga excéntrica de antebrazo para el codo, anti-rotación de core,
+        movilidad de cadera y tobillo. Es la parte menos espectacular del programa y la que más lesiones evita.</p>
+      </div>
+    </div>
+    <div class="blk">
+      <span class="bn">03</span>
+      <div>
+        <h4>Fuerza</h4>
+        <p>Piernas con trabajo unilateral, bisagra de cadera, sentadilla y potencia rotacional. Un jugador con piernas
+        fuertes frena mejor, y frenar mejor es la mitad de la prevención.</p>
+        <p class="blk-link">Se entrena en la Zona de Fuerza.</p>
+      </div>
+    </div>
+    <div class="blk">
+      <span class="bn">04</span>
+      <div>
+        <h4>Desaceleración y cambio de dirección</h4>
+        <p>El gesto que más lesiona en pádel no es golpear, <strong>es frenar</strong>. Mecánica de aterrizaje, frenadas
+        controladas, desplazamientos laterales y reaceleración.</p>
+        <p class="blk-link">Se entrena en la Hyrox Lane, la única recta libre de la comarca para hacerlo bien.</p>
+      </div>
+    </div>
+    <div class="blk">
+      <span class="bn">05</span>
+      <div>
+        <h4>Base aeróbica</h4>
+        <p>Un partido es esfuerzo intermitente: la capacidad aeróbica decide cómo se recupera el jugador entre puntos y
+        en qué estado llega al tercer set. Es la variable más ignorada y la que más se nota.</p>
+        <p class="blk-link">Se entrena en la Engine Room.</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="note">Lo que necesita un jugador de pádel es exactamente lo mismo que necesita un atleta de Hyrox. No hemos
+  diseñado dos salas, hemos diseñado una que sirve a las dos cosas.</p>
+
+  <h3 class="sub">Cómo se vende, en la práctica</h3>
+  <div class="tbl-wrap">
+    <table class="t-prod">
+      <thead><tr><th>Producto</th><th>Formato</th><th>Para quién</th></tr></thead>
+      <tbody>
+        <tr><td>Valoración Padel Performance</td><td>Sesión individual con informe</td><td>Puerta de entrada, cualquier jugador del club</td></tr>
+        <tr><td>Clase Padel Performance</td><td>Grupo reducido, 2 días por semana</td><td>El jugador habitual que quiere rendir más y lesionarse menos</td></tr>
+        <tr><td>Vuelta a la pista</td><td>Individual, coordinado con la cabina de fisio</td><td>El jugador que vuelve de una lesión</td></tr>
+        <tr class="hl"><td>Sénior +45</td><td>Grupo, ritmo adaptado</td><td>El jugador que quiere seguir jugando diez años más. Es el segmento más fiel y el que menos se atiende</td></tr>
+        <tr><td>Preparación física de la academia</td><td>A definir con vosotros</td><td>Los jugadores de vuestra academia</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <div class="c-title">Un detalle de programación que os interesa</div>
+    <p>Las clases Padel Performance se programan en las franjas en las que vuestras pistas están más vacías, mañana y
+    mediodía. <strong>No competimos con vuestra hora punta, la rellenamos por delante.</strong></p>
+  </div>
+
+  <p>El programa se apoya en piezas que son vuestras, y eso es una ventaja: las cabinas de fisioterapia para cerrar el
+  circuito de valoración, entrenamiento y recuperación, el espacio Détente como cierre natural de una sesión o de un
+  partido, y sobre todo <strong>un canal de comunicación con vuestros profesores de pádel</strong>: ellos ven la
+  técnica, nosotros vemos el motor y la estructura.</p>
+
+  <div class="callout quiet">
+    <div class="c-title">La academia, planteado y no dado por hecho</div>
+    <p>La preparación física de los jugadores de vuestra academia es la extensión natural de todo lo anterior, con la
+    misma metodología y el mismo equipo. <strong>Lo dejamos planteado como punto a definir juntos, no como algo que
+    demos por hecho.</strong> Es vuestra academia.</p>
+  </div>
+
+  <p class="note">Lo que de verdad gana el club con esto es retención de su propia base: un jugador que no se lesiona
+  sigue reservando. Confianza: <strong>alta</strong> sobre el patrón de lesiones y sobre el principio de que la fuerza y
+  el trabajo preventivo lo reducen, <strong>moderada</strong> sobre la demanda real en vuestro público,
+  <strong>desconocida</strong> sobre la academia. No prometemos cifras concretas de reducción de lesiones, y
+  desconfiaríamos de quien las prometiera.</p>
+</section>
+
+<!-- ===== 10 + 11 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">10</span><h2>Lo que necesitamos del edificio</h2></div>
+  <p class="sec-lead">Cuatro puntos. No son exigencias, son las condiciones sin las cuales la sala que acabáis de leer
+  no se puede construir. Casi todas cuestan poco o nada si se anticipan en el plano, y son caras o imposibles si se
+  descubren en obra.</p>
+
+  <div class="needs">
+    <div class="need critical">
+      <div class="nn">01</div>
+      <div>
+        <h3>Planta baja</h3>
+        <p>Es el punto duro del dossier. En la sala se sueltan barras de 100 a 180 kg desde altura de hombro o por
+        encima de la cabeza, <strong>cientos de veces al día</strong>. Sobre solera apoyada en terreno, la energía se
+        disipa en el terreno y el problema simplemente no existe.</p>
+        <p>En primera planta se convierte en tres problemas a la vez: sobrecoste estructural para vosotros por tener que
+        sobredimensionar el forjado, transmisión del ruido de impacto por estructura a todo lo que quede debajo, y una
+        servidumbre logística permanente para meter y sacar rigs, plataformas y discos.</p>
+        <p><strong>Y aquí está lo importante: ese ruido de impacto es un problema vuestro, no nuestro.</strong> Cuarenta
+        personas trabajando en el coworking encima o al lado de una sala donde caen barras de 100 a 180 kg cientos de
+        veces al día es un conflicto de vecindad diario, todos los días, durante los cincuenta años de la concesión. Lo
+        mismo vale para el restaurante y para las salas de reunión.</p>
+        <p>Dicho de la forma más clara que sabemos: <strong>no pedimos la planta baja por nuestra comodidad, la pedimos
+        para proteger vuestro coworking y vuestro restaurante</strong>. Resuelto en el plano, el problema no existe y no
+        cuesta nada. Descubierto después, no tiene solución aceptable.</p>
+        <p><strong>Coste de resolverlo en planta baja: cero.</strong> Es la primera pregunta que pedimos cerrar, porque
+        sin ella no se puede diseñar nada.</p>
+      </div>
+    </div>
+    <div class="need">
+      <div class="nn">02</div>
+      <div>
+        <h3>Superficie y forma</h3>
+        <p>500 m² idealmente, 450 m² como suelo. Y tan importante como los metros: <strong>forma rectangular, con un
+        lado largo de 20 m o más</strong>. La calle Hyrox necesita de 15 a 20 m de recta libre, y una planta cuadrada o
+        en L mata la calle y con ella el proyecto.</p>
+      </div>
+    </div>
+    <div class="need">
+      <div class="nn">03</div>
+      <div>
+        <h3>Altura libre</h3>
+        <p>4,5 m mínimo, 5,5 m recomendado. Wall balls a 3,05 m con vuelo de balón, trepa de cuerda, dominadas y
+        muscle-up en rig. Vuestra nave tiene 12 m libres sobre pista, así que el volumen existe: lo que pedimos es que
+        la planta FORGE no acabe siendo el rincón con el falso techo más bajo del edificio por quedar debajo de una
+        instalación.</p>
+      </div>
+    </div>
+    <div class="need">
+      <div class="nn">04</div>
+      <div>
+        <h3>Climatización real</h3>
+        <p>Vuestra memoria dice que los espacios de servicio sí están climatizados. Necesitamos la confirmación de que
+        <strong>la planta FORGE es uno de ellos</strong>. Una sala de 450 m² con 25 personas haciendo intervalos, en
+        julio en el Garraf y sin frío real, es inutilizable a las 19:00, que es exactamente nuestra hora punta. No es
+        una cuestión de confort, es una cuestión de que el negocio exista o no en verano.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout quiet">
+    <div class="c-title">Y el resto del detalle técnico, cuando queráis</div>
+    <p>Cargas de suelo y rebajes en solera, renovaciones de aire, potencia eléctrica y contador, tratamiento acústico,
+    agua y duchas, accesos y visibilidad: está todo trabajado y escrito. <strong>Lo compartimos con vuestro equipo de
+    arquitectura cuando digáis</strong>. Nuestro socio Olivier lo lleva directamente con vuestro equipo técnico.</p>
+  </div>
+
+  <div class="sec-head" style="margin-top:9mm"><span class="sec-num">11</span><h2>Sí a la apertura a las 7:00 o 6:30</h2></div>
+  <p class="sec-lead">Lo planteáis en vuestra memoria como una duda. Para nosotros es una de las mejores ideas del
+  proyecto.</p>
+  <div class="callout hard">
+    <p class="big">Sí, nos interesa, y mucho.</p>
+    <p>La franja de 6:30 a 9:00 es una de las dos puntas del entrenamiento funcional y hoy <strong>no tiene
+    alternativa seria en la comarca</strong>. Es gente que entrena antes de trabajar, que es fiel, que paga cuota alta
+    y que no os quita ni una sola pista.</p>
+  </div>
+  <p>Estamos dispuestos a hablar de cómo compartir el coste marginal de abrir tan temprano. Y un detalle de plano que
+  resuelve buena parte del problema: <strong>un acceso exterior directo e independiente a la sala</strong>, con control
+  por credencial compatible con el vuestro, permite abrir FORGE a las 6:30 sin abrir el club entero. Vuestro personal
+  no entra hasta su hora, y el socio de la primera franja ya está dentro.</p>
+</section>
+
+<!-- ===== 12 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">12</span><h2>Quiénes somos</h2></div>
+  <p class="sec-lead">Jo Soc Fit, grupo de centros deportivos con base en Barcelona, tres socios operativos. No somos
+  inversores buscando dónde meter dinero, somos operadores que abren, montan y hacen crecer centros. La ventaja
+  competitiva no es tener gimnasios, es saber abrirlos, estructurarlos y convertirlos en negocios rentables y
+  replicables.</p>
+
+  <div class="grid g3">
+    <div class="card"><div class="k">Socio</div><h3>Carlos</h3><p><strong>La operación, y nuestra mejor carta.</strong>
+    Referente deportivo y comunitario. Recluta y forma al equipo de coaches, implanta procesos, crea la cultura y
+    desarrolla la comunidad. Planifica fuerza, endurance y Hyrox. Es quien pone un centro en órbita y quien hace que
+    siga girando.</p></div>
+    <div class="card"><div class="k">Socio</div><h3>Olivier</h3><p><strong>CFO y el lado analítico.</strong> Números,
+    finanzas, P&amp;L y control. Y algo que aquí no es un detalle: viene del sector inmobiliario, con quince años de
+    promoción y construcción. Sabe leer un estado de entrega, un presupuesto de obra y un plazo.</p></div>
+    <div class="card"><div class="k">Socio</div><h3>Joachim</h3><p><strong>El lado relacional.</strong> Lleva la
+    relación con socios, bancos, partners, proveedores e instituciones, y es quien abre y sostiene las oportunidades
+    como esta.</p></div>
+  </div>
+
+  <div class="callout">
+    <div class="c-title">Un encaje que conviene decir en voz alta</div>
+    <p>Como Olivier viene de la promoción, cuando nos digáis en qué estado entregáis el espacio no vamos a necesitar
+    tres semanas para saber lo que cuesta acondicionarlo. <strong>Puede hablar directamente con vuestro equipo de
+    arquitectura e ingeniería, en el mismo idioma, desde la primera reunión técnica</strong>, y discutir con ellos
+    solera, forjados, instalaciones y plazos sin intermediarios.</p>
+  </div>
+
+  <h3 class="sub">Track record</h3>
+  <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Proyecto</th><th>Estado</th><th>Dato</th></tr></thead>
+      <tbody>
+        <tr><td>Brooklyn Fitboxing Sant Boi</td><td>En marcha, abierto en 2025</td><td>N&ordm;1 del mundo de los cerca de 280 clubes de la red Brooklyn Fitboxing</td></tr>
+        <tr><td>Brooklyn Viladecans</td><td>En obra y financiación</td><td>Apertura prevista en enero de 2027</td></tr>
+        <tr><td>Club de entrenamiento funcional en Barcelona</td><td>En preparación con socia inversora</td><td>Apertura objetivo a mediados de 2027</td></tr>
+        <tr><td>FORGE Sant Pere de Ribes</td><td>En conversación</td><td>Este dossier</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub">Los números de Sant Boi</h3>
+  <p>No es una proyección, es un club abierto y funcionando. Es el único track record que enseñamos, porque es el único
+  verificado por la realidad.</p>
+
+  <div class="hero-stat">
+    <b>N&ordm;1</b>
+    <div>
+      <strong>del mundo</strong>
+      <span>Cerca de 280 clubes de la red Brooklyn Fitboxing</span>
+    </div>
+    <em>Brooklyn Fitboxing Sant Boi, abierto en 2025 por un equipo que montaba su primer centro.</em>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>336</b><span>socios</span></div>
+    <div class="stat"><b>35%</b><span>de margen de explotación</span></div>
+    <div class="stat"><b>230</b><span>socios de punto de equilibrio, un colchón de más de 100 socios</span></div>
+    <div class="stat"><b>4,9</b><span>sobre 98 reseñas</span></div>
+    <div class="stat"><b>2025</b><span>a&ntilde;o de apertura, primer centro del equipo</span></div>
+    <div class="stat"><b>Mes 2</b><span>en beneficio desde el segundo mes</span></div>
+    <div class="stat wide"><b>Ni un solo mes</b><span>con menos socios que el anterior desde la apertura</span></div>
+  </div>
+
+  <div class="callout hard">
+    <div class="c-title">Cómo trabajamos</div>
+    <p class="big">Ninguno de los tres socios cobra un sueldo del club, no repartimos dividendos, y mientras podamos,
+    lo que gana un centro se reinvierte en el siguiente.</p>
+    <p>Buena parte de la caja generada por Sant Boi ya está metida en Viladecans. No es una postura, es cómo hemos
+    financiado el crecimiento hasta hoy.</p>
+  </div>
+
+  <p>Y una cosa más, porque marca cómo presentamos las cosas: cuando alguien enseña un plan de gimnasio con un 55% o
+  un 60% de margen, sabemos que es humo, y nosotros no vamos a presentar nada así.
+  <strong>Nuestro 35% real vale más que el 55% de nadie.</strong></p>
+
+  <h3 class="sub">Por qué este proyecto nos interesa de verdad</h3>
+  <div class="two-col">
+    <div>
+      <p>Cada centro nuevo tiene que ser más fácil de abrir que el anterior, y por eso nos interesan los formatos
+      replicables. <strong>Si "FORGE dentro de un club de pádel" funciona una vez, se repite en cada gran centro de
+      pádel que abra en España</strong>, y vosotros seríais el primero.</p>
+    </div>
+    <div>
+      <p>Y el calendario encaja: primero Viladecans, luego el club de Barcelona, después Sant Pere de Ribes. Este
+      proyecto no compite por recursos ni por atención en el corto plazo. Lo que sí hay que hacer desde ya es el
+      trabajo de definición, <strong>porque el diseño del espacio se decide mucho antes de que se construya</strong>.
+      De ahí este documento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 13 plano ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">13</span><h2>Implantación propuesta</h2></div>
+  <p class="sec-lead">Espacio reservado para el plano de implantación de la sala. Se completa en cuanto recibamos
+  vuestro plano en planta del local y el plano general del recinto.</p>
+  <div class="plan-slot">
+    <div class="ps-mark">+</div>
+    <b>Plano pendiente</b>
+    <p>Zonificado de las cinco zonas sobre el local real, con la calle Hyrox acotada, la banda de plataformas
+    posicionada y el trazado del bucle de carrera sobre el plano general.</p>
+  </div>
+  <p class="fig-cap">Fig. 1 · Implantación propuesta de la sala FORGE. Documento en preparación.</p>
+</section>
+
+<!-- ===== PARTE 2 + 14 ===== -->
+<section class="page">
+  <div class="part two">
+    <span class="p-k">Parte 2</span>
+    <h2>Marco económico</h2>
+    <p><strong>Todo lo que viene a continuación es una base para la discusión.</strong> Son nuestras hipótesis y nuestra
+    forma de ver hoy el encaje económico, puestas por escrito para que la conversación tenga algo concreto encima de la
+    mesa. Nada está cerrado, y damos por hecho que vuestra manera de verlo va a cambiar cosas.</p>
+    <p>Va al final a propósito, porque no es la conversación de hoy.</p>
+  </div>
+
+  <div class="sec-head"><span class="sec-num">14</span><h2>Los tres escenarios de ingresos</h2></div>
+  <p class="sec-lead">Nuestro modelo de ingresos en régimen de crucero, a 500 m², entre el mes 18 y el 24. Lo
+  enseñamos entero porque creemos que hablar de renta sin hablar antes de ingresos no lleva a ninguna parte.</p>
+
+  <div class="tbl-wrap">
+    <table class="t-esc">
+      <caption>Régimen de crucero · 500 m² · mes 18 a 24</caption>
+      <thead><tr><th>Línea</th><th class="num">Bajo</th><th class="num">Base</th><th class="num">Alto</th></tr></thead>
+      <tbody>
+        <tr><td>Socios en crucero</td><td class="num">300</td><td class="num">350</td><td class="num">400</td></tr>
+        <tr><td>Cuota media</td><td class="num">82 €</td><td class="num">86 €</td><td class="num">92 €</td></tr>
+        <tr><td>Cuotas</td><td class="num">295.000 €</td><td class="num">361.000 €</td><td class="num">442.000 €</td></tr>
+        <tr><td>Club de running</td><td class="num">10.500 €</td><td class="num">16.800 €</td><td class="num">25.000 €</td></tr>
+        <tr><td>Entrenamiento personal</td><td class="num">35.000 €</td><td class="num">45.000 €</td><td class="num">60.000 €</td></tr>
+        <tr><td>Bonos y clases sueltas</td><td class="num">15.000 €</td><td class="num">18.000 €</td><td class="num">25.000 €</td></tr>
+        <tr><td>Matrículas</td><td class="num">5.000 €</td><td class="num">6.000 €</td><td class="num">8.000 €</td></tr>
+        <tr><td>Retail, bebidas y suplementos</td><td class="num">10.000 €</td><td class="num">12.000 €</td><td class="num">18.000 €</td></tr>
+        <tr class="total"><td>Ingresos totales</td><td class="num">370.000 €</td><td class="num">459.000 €</td><td class="num">578.000 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout hard">
+    <div class="c-title">Tres cosas que hay que leer con esta tabla</div>
+    <p><strong>1. Son ingresos brutos, no resultado.</strong> Entre personal, coaches, suministros, mantenimiento,
+    marketing, software y seguros, la estructura de costes de un centro de este tipo se lleva <strong>entre el 70% y el
+    75% de los ingresos</strong>. Sobre lo que queda hay que pagar la renta y amortizar la inversión inicial. La línea
+    de abajo de esta tabla no es dinero disponible.</p>
+    <p><strong>2. El régimen de crucero llega en el mes 18 a 24.</strong> El año 1 se mueve entre el <strong>40% y el
+    55%</strong> de estas cifras, y es justamente el año en el que estamos pagando la obra y el material. La curva de
+    arranque importa tanto como el punto de llegada.</p>
+    <p><strong>3. El escenario alto solo existe con 500 m² en planta baja.</strong> A 400 m² el techo real es el
+    escenario base. A 300 m² no llegamos ni al bajo. Los metros y la planta no mueven la cifra al margen,
+    <strong>determinan qué escenario es alcanzable</strong>, y por eso insistimos tanto en las dos cosas.</p>
+  </div>
+
+  <div class="callout">
+    <div class="c-title">Fuera del modelo a propósito</div>
+    <p>Los 40 puestos de coworking son vuestros, y <strong>no contamos ni un euro de ingreso sobre ellos en este
+    modelo</strong>. Que alguno de sus usuarios acabe siendo socio de FORGE es una venta cruzada real, pero es upside, no
+    una línea de nuestro plan. Preferimos que aparezca como sorpresa buena y no como una cifra que se nos pueda
+    discutir.</p>
+  </div>
+
+  <span class="conf">Confianza: <b>moderada</b> · estimaciones construidas a partir de centros que hemos operado, no proyecciones auditadas</span>
+</section>
+
+<!-- ===== 15 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">15</span><h2>Hasta dónde podemos llegar en renta</h2></div>
+  <p class="sec-lead">Nuestra lectura de hoy, para confrontarla con la vuestra. Preferimos ense&ntilde;ar el razonamiento entero en vez de
+  soltar una cifra, porque la
+  cifra del final solo tiene sentido con los dos pasos que vienen antes.</p>
+
+  <div class="deduce">
+    <div class="dstep">
+      <div class="ds">01</div>
+      <div>
+        <h4>Primero, el techo en porcentaje</h4>
+        <span class="cap">10%<small>de los ingresos del centro, como límite de renta sostenible</small></span>
+        <p>Tal y como lo vemos hoy, la renta de un centro de este tipo no puede superar el entorno del 10% de los ingresos. Por encima de ahí el
+        centro no genera retorno sobre una inversión del orden de 300.000 €, y deja de ser un negocio. No es una postura
+        de negociaci&oacute;n, es lo que nos sale de la estructura de costes que hab&eacute;is visto en la tabla anterior. Si vuestros datos
+        dicen otra cosa, ese es exactamente el punto que hay que discutir.</p>
+      </div>
+    </div>
+    <div class="dstep">
+      <div class="ds">02</div>
+      <div>
+        <h4>Después, el escenario</h4>
+        <p>En el mejor de los escenarios, con 500 m² en planta baja, y a partir del mes 24, el centro factura del orden de
+        550.000 a 580.000 €. Es el escenario alto de la tabla anterior, el que solo existe si se dan las dos condiciones
+        que pedimos en la primera parte de este documento.</p>
+      </div>
+    </div>
+    <div class="dstep">
+      <div class="ds">03</div>
+      <div>
+        <h4>Y entonces, la cifra que sale de ahí</h4>
+        <p>Aplicando ese 10% sobre esa facturación, la renta llegaría al entorno de 5.000 € al mes. Y sería un resultado
+        excelente para los dos.</p>
+        <p>Ahora bien, eso es <strong>un punto de llegada, no un punto de partida</strong>. El año 1 se sitúa entre el
+        40% y el 55% del régimen de crucero, y una renta de ese nivel desde el principio mata el proyecto antes de que
+        arranque, que no le conviene a nadie y menos a vosotros con una planta vacía en mitad del recinto.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="sub">Lo que eso implica para la estructura</h3>
+  <p>Por eso la renta tiene que tener <strong>una parte fija baja y una parte variable sobre nuestra
+  facturación</strong>. La fija arranca modesta durante la puesta en marcha, cuando todavía estamos llenando la sala, y
+  la variable hace el resto a medida que el centro crece.</p>
+  <p>Es la única fórmula que funciona para los dos: nosotros sobrevivimos al arranque, y vosotros cobráis más cuanto
+  mejor nos vaya, en vez de cobrar lo mismo nos vaya bien o mal. La cifra de 5.000 € al mes no es algo de lo que
+  huyamos, es algo hacia lo que queremos llegar juntos.</p>
+
+  <h3 class="sub">Sobre vuestro orden de magnitud</h3>
+  <p>Vuestra memoria sitúa la renta en 72.000 a 96.000 € al año. Sobre el escenario base de 459.000 € eso equivale a
+  entre el 15,7% y el 21% de nuestra facturación. Sobre el escenario bajo, a más del 25%.</p>
+  <p>Con esos porcentajes no sale con ninguna estructura, ni fija, ni variable, ni mixta. Lo decimos ahora y no en plena
+  negociación, que es exactamente el criterio que vosotros mismos aplicáis en vuestra memoria cuando enunciáis sin
+  rodeos lo del calendario.</p>
+
+  <div class="callout quiet">
+    <div class="c-title">Lo que proponemos</div>
+    <p>Una sesión de trabajo específica sobre el modelo económico, con nuestras cifras abiertas y las vuestras también.
+    Si vuestros datos mejoran nuestras hipótesis, cambiamos nuestras hipótesis.</p>
+    <p>Y dicho eso, lo que de verdad importa hoy es el resto de este dossier: el concepto, las zonas, los metros y la
+    planta. <strong>El acuerdo económico se construye bien una vez que estamos de acuerdo en qué estamos
+    construyendo</strong>, no antes.</p>
+  </div>
+</section>
+
+<!-- ===== 16 ===== -->
+<section class="page">
+  <div class="sec-head"><span class="sec-num">16</span><h2>El marco de colaboración</h2></div>
+
+  <h3 class="sub" style="margin-top:4mm">El perímetro</h3>
+  <p>Antes de hablar de condiciones, conviene dejar escrito quién opera qué, porque es lo que da sentido a todo lo
+  demás. <strong>Vosotros operáis el pádel, la hostelería, el coworking y el espacio Détente. FORGE opera todo lo que es
+  entrenamiento, rendimiento físico y programación deportiva del recinto.</strong> Un campus, dos especialistas.</p>
+  <p>Nuestro perímetro: la sala de rendimiento, las clases dirigidas, el open box, el entrenamiento personal, el club de
+  running y la pista de carrera, el programa Padel Performance, la programación deportiva y los eventos de rendimiento.
+  No entramos en pádel, restauración, barra, coworking ni espacio Détente: son vuestros y así deben quedarse. La única
+  excepción que planteamos es el interés por operar una de las tres cabinas de fisioterapia, explicado más abajo.</p>
+
+  <h3 class="sub">El principio</h3>
+  <div class="callout hard">
+    <p class="big">Renta fija baja y un porcentaje de lo que factura FORGE. No un alquiler alto y plano.</p>
+    <p>Vosotros aportáis ubicación, tráfico deportivo cualificado y zonas comunes, y os beneficiáis directamente de que
+    el socio pase más tiempo dentro del recinto. Con un alquiler plano cobráis lo mismo nos vaya bien o mal, y no
+    tenéis ningún incentivo real en mandarnos jugadores. Con un porcentaje, cuanto mejor funciona FORGE más ganáis
+    vosotros, y los dos empujamos en la misma dirección desde el primer día.</p>
+  </div>
+
+  <h3 class="sub">Las condiciones de marco</h3>
+  <p>Sin cifras, porque las cifras son de la otra sesi&oacute;n. Este es nuestro punto de partida sobre las condiciones
+  estructurales, tal y como lo vemos hoy y abierto a vuestra lectura:</p>
+  <ul class="list">
+    <li><strong>Carencia desde la entrega del espacio</strong>, para obra, apertura y arranque, con la renta empezando
+    cuando FORGE abre al público y no cuando se firma</li>
+    <li><strong>Duración larga</strong>, alineada con la amortización de la inversión que metemos en el edificio</li>
+    <li><strong>Exclusividad de entrenamiento dentro del recinto.</strong> Sin ella estaríamos financiando la prueba de
+    concepto de nuestro propio competidor dentro de vuestro propio edificio</li>
+    <li><strong>Acceso real a la comunidad:</strong> preventa en vuestra base de leads antes de abrir, campañas
+    conjuntas y activaciones dentro del club</li>
+    <li><strong>Que FORGE no financie obra estructural.</strong> Estructura, cerramientos, solera nivelada, vestuarios
+    generales, aparcamiento y recepción son del club. El acondicionamiento interior y el equipamiento son nuestros</li>
+  </ul>
+
+  <h3 class="sub">Los dos acuerdos adyacentes</h3>
+  <div class="two-col">
+    <div class="card"><div class="k">Acuerdo 01</div><h3>Espacio Détente &amp; Relaxation</h3>
+      <p>Nos interesa incorporar vuestro espacio de 400 m² con sauna, hammam y baño frío a nuestras modalidades de
+      abono premium, con facturación por entrada a <strong>tarifa mayorista</strong>, tal y como planteáis. Conviene
+      negociarla pronto porque condiciona el precio de nuestras cuotas altas, y porque el volumen que os aportamos es
+      sostenido y en franjas de baja ocupación del spa, no en punta.</p></div>
+    <div class="card"><div class="k">Acuerdo 02</div><h3>Cabinas de fisioterapia</h3>
+      <p>Nos interesa <strong>una de las tres cabinas en concesión</strong>, operada por un fisioterapeuta de nuestro
+      ecosistema. La razón es deportiva antes que económica: la prevención y la recuperación forman parte del servicio
+      de un centro de rendimiento, y os aporta un flujo de pacientes constante desde el primer mes.</p></div>
+  </div>
+
+  <h3 class="sub">Una zona de frontera, planteada y no dada por hecho</h3>
+  <div class="callout quiet">
+    <div class="c-title">La preparación física de los jugadores de vuestra academia</div>
+    <p>Es la extensión natural de nuestro perímetro y creemos que tiene todo el sentido deportivo: quien programa la
+    fuerza y la prevención de la comunidad puede hacerlo también para los jugadores de la academia, con la misma
+    metodología y el mismo equipo.</p>
+    <p><strong>Lo dejamos planteado como punto a definir juntos, no como algo que demos por hecho.</strong> Es vuestra
+    academia.</p>
+  </div>
+
+  <h3 class="sub">Próximos pasos</h3>
+  <ol class="steps">
+    <li><strong>Plano de implantación general del recinto</strong>, para poder trazar el bucle de carrera antes de que
+    los bordillos estén decididos</li>
+    <li><strong>Plano en planta del local propuesto</strong>, aunque sea preliminar</li>
+    <li><strong>Confirmación de planta baja</strong> y de los metros asignados</li>
+    <li><strong>Sesión de trabajo dedicada al modelo económico</strong>, con los números abiertos por los dos lados</li>
+  </ol>
+
+  <div class="callout">
+    <p>Con el plano en planta y la confirmación de planta baja y metros, os devolvemos el zonificado real de las cinco
+    zonas sobre vuestro local en dos semanas.</p>
+  </div>
+
+  <div class="doc-foot">
+    <div>
+      <b>FORGE × Pádel Sant Pere de Ribes</b><br>
+      Documento de trabajo. Punto de partida de conversación. Nada de lo que contiene está cerrado, decidido ni
+      comprometido. Las cifras son órdenes de magnitud, no números negociados.
+    </div>
+    <div style="text-align:right">
+      Joachim Antonsen<br>joachim.antonsen@gmail.com<br>Septiembre de 2026
+    </div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
