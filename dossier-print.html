@@ -161,6 +161,7 @@ tr.hl td{background:var(--accent-soft);color:var(--ink)}
 .st b{display:block;font-family:Oswald,sans-serif;font-weight:500;font-size:9.4pt;color:var(--ink);line-height:1.15}
 .st i{display:block;font-style:normal;font-size:8pt;color:var(--dim);margin-top:.6mm}
 .reqs{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5mm;margin:4mm 0}
+.reqs.stack{grid-template-columns:1fr}
 .req{border:.6pt solid var(--line);border-top:1.6pt solid var(--accent);padding:2.8mm 3mm}
 .req b{display:block;font-family:Oswald,sans-serif;font-weight:500;font-size:9pt;color:var(--ink);letter-spacing:.3px;margin-bottom:1.2mm;text-transform:uppercase}
 .req p{font-size:8pt;color:var(--muted);margin:0}
@@ -1028,6 +1029,7 @@ ol.steps li:before{content:counter(s,decimal-leading-zero);position:absolute;lef
   <p>Después de años haciendo esto sabemos exactamente en qué somos buenos, y no es en comprar material. Hay dos cosas
   que hacemos mejor que la media, y las dos son las que de verdad sostienen un centro.</p>
 
+  <div class="reqs stack">
   <div class="req">
     <div class="rq">01</div>
     <div>
@@ -1048,6 +1050,7 @@ ol.steps li:before{content:counter(s,decimal-leading-zero);position:absolute;lef
       sus amigos. <strong>Nuestro 4,9 sobre 98 reseñas y no haber tenido un solo mes con menos socios que el anterior
       no son casualidad</strong>, son lo que se puede medir de algo que no se compra.</p>
     </div>
+  </div>
   </div>
 
   <div class="callout">
